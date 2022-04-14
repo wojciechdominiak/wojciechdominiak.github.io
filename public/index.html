@@ -4,27 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll</title>
-    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- header -->
     <header class="header" id="home">
-      <!-- navbar -->
       <nav class="nav" id="nav">
-        <!-- nav header -->
         <div class="nav-header">
-          <a href="#" class="links__scroll">.wojciechdominiak</a>
+          <a href="#home" class="links__scroll">.wojciechdominiak</a>
           <button class="nav-header__toggle">
             <i class="fas fa-bars"></i>
           </button>
         </div>
-        <!-- links -->
         <div class="links-container">
           <ul class="links">
             <li>
@@ -32,58 +26,98 @@
             </li>
             <li>
               <a href="#services" class="links__scroll">experience</a>
-            </li>
+            </li> 
             <li>
-              <a href="#tours" class="links__scroll">work</a>
-            </li>
-            <li>
-              <a href="#tours" class="links__scroll">contact</a>
+              <a href="#contact" class="links__scroll">contact</a>
             </li>
           </ul>
         </div>
       </nav>
-      <!-- banner -->
       <div class="banner">
         <div class="container">
           <h1>Hi, my name is Wojciech Dominiak.</h1>
           <p>I'm frontend developer looking for first comercial experience.</p>
-          <a href="#tours" class="links__scroll btn btn-green">
-            Check my app
-          </a>
+          <a href="#tours" class="links__scroll btn btn-green"> resume </a>
         </div>
       </div>
     </header>
-    <!-- about -->
     <section id="about" class="section">
       <div class="section__title">
         <h2>about me</h2>
+        <div class="section__content">
+          <p>
+            Hello! My name is Brittany and I enjoy creating things that live on
+            the internet. My interest in web development started back in 2012
+            when I decided to try editing custom Tumblr themes — turns out
+            hacking together a custom reblog button taught me a lot about HTML &
+            CSS!
+          </p>
+          <img src="./me.avif" alt="me" />
+        </div>
       </div>
     </section>
-    <!-- services -->
     <section id="services" class="section">
       <div class="section__title">
-        <h2>experience</h2>
+        <h2>Experience</h2>
+        <div class="experience__content">
+          <p>
+            Engineer @ Upstatement May <br />
+            2018 - Present <br />
+            <li>
+              <ul>
+                Write modern, performant, maintainable code for a diverse array
+                of client and internal projects
+              </ul>
+              <ul>
+                Write modern, performant, maintainable code for a diverse array
+                of client and internal projects
+              </ul>
+              <ul>
+                Write modern, performant, maintainable code for a diverse array
+                of client and internal projects
+              </ul>
+            </li>
+          </p>
+        </div>
       </div>
     </section>
-    <!-- tours -->
-    <section id="tours" class="section">
+    <section id="contact" class="section contact">
       <div class="section__title">
-        <h2>work</h2>
+        <h2>get in touch</h2>
+      </div>
+      <div class="section__content">
+        <p>
+          I’m currently looking for any new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I’ll try my
+          best to get back to you!
+        </p>
+        <a href="mailto:wojciech.dominiak96@gmail.com" rel="noopener noreferrer" target="_blank" class="btn btn-green"> say hello </a>
+      </div>
+      <div class="icons">
+        <a href="https://www.twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.twitter.com">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/wojciechdominiak">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/dominiaszw">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </section>
-    <!-- footer -->
     <footer class="section">
       <p>
-        copyright &copy; backroads travel tours company
+        copyright &copy; Wojciech Dominiak
         <span id="date"></span>
         .all rights reserved
       </p>
     </footer>
-    <!-- back to top button -->
-    <a href="#home" class=" top-link">
+    <a href="#home" class="top-link">
       <i class="fas fa-arrow-up"></i>
     </a>
-    <!-- javascript -->
     <script src="app.js"></script>
   </body>
 </html>
