@@ -1,5 +1,6 @@
 // ********** set date ************
 const date = document.getElementById("date");
+
 date.innerText = new Date().getFullYear();
 // ********** close links ************
 const navToggle = document.querySelector(".nav-header__toggle");
@@ -17,18 +18,20 @@ navToggle.addEventListener("click", () => {
 // ********** fixed navbar ************
 const navbar = document.getElementById("nav");
 const topLink = document.querySelector(".top-link");
+
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
   const navHeight = navbar.getBoundingClientRect().height;
+
   scrollHeight > navHeight
     ? navbar.classList.add("fixed-nav")
     : navbar.classList.remove("fixed-nav");
+
   scrollHeight > 500
     ? topLink.classList.add("show-link")
     : topLink.classList.remove("show-link");
 });
 // ********** smooth scroll ************
-// select links
 const scrollLinks = document.querySelectorAll(".links__scroll");
 
 scrollLinks.forEach((link) => {
@@ -36,17 +39,13 @@ scrollLinks.forEach((link) => {
     e.preventDefault();
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
-
     const navHeight = navbar.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
     const fixedNav = navbar.classList.contains("fixed-nav");
     let position = element.offsetTop - navHeight;
 
-    if (!fixedNav) {
-      position = position - navHeight;
-    }
-
-    if (navHeight > 202) {
+    
+    if (navHeight > 92) {
       position = position + containerHeight;
     }
 
