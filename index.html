@@ -13,67 +13,116 @@
   <body>
     <!-- HEADER -->
     <header id="home" class="header">
-      <nav class="nav" id="nav">
-        <div class="nav-header">
-          <a href="#home" class="links__scroll">.wdominiak</a>
-          <button class="nav-header__toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <div class="links-container">
-          <ul class="links">
-            <li>
-              <a href="#about" class="links__scroll">about</a>
-            </li>
-            <li>
-              <a href="#experience" class="links__scroll">experience</a>
-            </li>
-            <li>
-              <a href="#contact" class="links__scroll">contact</a>
-            </li>
-          </ul>
+      <nav class="nav fixed-nav" id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <a href="#home" class="links__scroll">.wdominiak</a>
+            <button class="nav-header__toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#about" class="links__scroll">about</a>
+              </li>
+              <li>
+                <a href="#projects" class="links__scroll">projects</a>
+              </li>
+              <li>
+                <a href="#experience" class="links__scroll">experience</a>
+              </li>
+              <li>
+                <a href="#contact" class="links__scroll">contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="banner">
         <div class="container">
           <h1>Hi, my name is Wojciech Dominiak.</h1>
           <p>I'm frontend developer looking for first comercial experience.</p>
-          <a onclick="location.href='resume.pdf';" class="links__scroll btn"> resume </a>
+          <a onclick="location.href='resume.pdf';" class="links__scroll btn">
+            resume
+          </a>
         </div>
       </div>
     </header>
     <!-- ABOUT -->
     <section id="about" class="about">
-      <div class="about__title">
+      <div class="title">
         <h2>about me</h2>
       </div>
       <div class="about__content">
-        <p>
+        <p class="about__paragraph">
           Hello! My name is Wojciech and I'm M.Sc., Eng of mechanical
           engineering. My interest in programming started back in 2012 in middle
-          school. Since then programming has been my hobby and I have also used it
-          as an engineer in my work. As my master thesis, I wrote a simple desktop
-          application in Python. It taught me a lot, but the application code
-          itself was full of bad practices. Now I have decided to complete my
-          knowledge and try myself in a commercial job as a frontend developer. I
-          think my experience as a mechanical designer will help me a lot.
-          Finally, here and here, the product is created in consultation with
-          the client.
+          school. Since then programming has been my hobby and I have also used
+          it as an engineer in my work. As my master thesis, I wrote a simple
+          desktop application in Python. It taught me a lot, but the application
+          code itself was full of bad practices. Now I have decided to complete
+          my knowledge and try myself in a commercial job as a frontend
+          developer. I think my experience as a mechanical designer will help me
+          a lot. Finally, here and here, the product is created in consultation
+          with the client.
         </p>
-        <img src="dominiak.jpg" alt="my_photo" />
+        <img class="about__image" src="dominiak.jpg" alt="my_photo" />
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <div class="title">
+        <h2>projects</h2>
+      </div>
+      <div class="projects__content">
+        <article class="project__maincontent">
+          <!-- btn container -->
+          <div class="project__btncontainer">
+            <button class="tab-btn active" data-id="dragon-slayer">
+              Dragon Slayer
+            </button>
+            <button class="tab-btn" data-id="vision">vision</button>
+          </div>
+          <!-- single item -->
+          <div class="content active" id="dragon-slayer">
+            <p>
+              Dragon Slayer - a simple browser game. The challenge is to kill
+              the dragon. The player can perform an attack, a special attack,
+              and heal. Special attack and healing are only active in some
+              rounds. The dragon always strikes back. You have to choose the
+              right tactics and kill the dragon to save your kingdom!
+              <a
+                class="btn"
+                href="https://github.com/wojciechdominiak/dragon-slayer"
+                >link</a
+              >
+            </p>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content" id="vision">
+            <p>
+              Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth
+              crucifix offal deep v hella biodiesel. Church-key listicle
+            </p>
+          </div>
+          <!-- end of single item -->
+        </article>
+        <img src="./hero-bcg.jpeg" alt="" />
       </div>
     </section>
     <!-- EXPERIENCE -->
     <section id="experience" class="experience">
-      <div class="experience__title">
+      <div class="title">
         <h2>Experience</h2>
       </div>
       <div class="experience__content">
-        <p>
+        <p class="experience__paragraph">
           Junior mechanical designer @ SECO/WARWICK / partly remote <br />
           12/2021 - present <br />
         </p>
-        <ul>
+        <ul class="experience__list">
           <li>
             designing a product according to the customer's assumptions - from
             concept to finished device
@@ -81,12 +130,12 @@
           <li>supervision over technical documentation</li>
           <li>contact with customer</li>
         </ul>
-        <p>
+        <p class="experience__paragraph">
           Junior mechanical designer @ Sieć badawcza Łukasiewicz - IPS "TABOR"
           <br />
           09/2020 - 11/2021 <br />
         </p>
-        <ul>
+        <ul class="experience__list">
           <li>
             designing a product according to the customer's assumptions - from
             concept to finished device
@@ -98,11 +147,11 @@
     </section>
     <!-- CONTACT -->
     <section id="contact" class="contact">
-      <div class="contact__title">
+      <div class="title">
         <h2>get in touch</h2>
       </div>
       <div class="contact__content">
-        <p>
+        <p class="contact__paragraph">
           I’m currently looking for any new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I’ll try my
           best to get back to you!
@@ -120,7 +169,10 @@
         <a class="icnos__icon" href="https://twitter.com/DominaiakW">
           <i class="fab fa-twitter"></i>
         </a>
-        <a class="icnos__icon" href="https://www.linkedin.com/in/wojciech-dominiak-22a92519b/">
+        <a
+          class="icnos__icon"
+          href="https://www.linkedin.com/in/wojciech-dominiak-22a92519b/"
+        >
           <i class="fab fa-linkedin"></i>
         </a>
         <a class="icnos__icon" href="https://github.com/wojciechdominiak">
@@ -139,10 +191,6 @@
         .all rights reserved
       </p>
     </footer>
-    <!-- TOP-LINK -->
-    <a href="#home" class="top-link">
-      <i class="fas fa-arrow-up"></i>
-    </a>
     <!-- JAVA SCRIPT -->
     <script src="app.js"></script>
   </body>

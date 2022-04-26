@@ -15,22 +15,8 @@ navToggle.addEventListener("click", () => {
     ? (linksContainer.style.height = `${linksHeight}px`)
     : (linksContainer.style.height = 0);
 });
-// ********** fixed navbar ************
 const navbar = document.getElementById("nav");
-const topLink = document.querySelector(".top-link");
 
-window.addEventListener("scroll", () => {
-  const scrollHeight = window.pageYOffset;
-  const navHeight = navbar.getBoundingClientRect().height;
-
-  scrollHeight > navHeight
-    ? navbar.classList.add("fixed-nav")
-    : navbar.classList.remove("fixed-nav");
-
-  scrollHeight > 500
-    ? topLink.classList.add("show-link")
-    : topLink.classList.remove("show-link");
-});
 // ********** smooth scroll ************
 const scrollLinks = document.querySelectorAll(".links__scroll");
 
@@ -44,17 +30,32 @@ scrollLinks.forEach((link) => {
     const fixedNav = navbar.classList.contains("fixed-nav");
     let position = element.offsetTop - navHeight;
 
-    if (!fixedNav && navHeight > 92) {
-      position = position + containerHeight - 92;
-    }
-    else if (navHeight > 92) {
+    if (navHeight > 92) {
       position = position + containerHeight;
     }
 
-    window.scrollTo({ 
+    window.scrollTo({
       left: 0,
       top: position,
     });
     linksContainer.style.height = 0;
   });
+});
+
+const about = document.querySelector(".project__maincontent");
+const btns = document.querySelectorAll(".tab-btn");
+const articles = document.querySelectorAll(".content");
+
+about.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    btns.forEach(function (btn) {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
+    });
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id).classList.add("active");
+  }
 });
