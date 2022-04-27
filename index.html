@@ -13,7 +13,7 @@
   <body>
     <!-- HEADER -->
     <header id="home" class="header">
-      <nav class="nav fixed-nav" id="nav">
+      <nav class="nav" id="nav">
         <div class="nav-center">
           <div class="nav-header">
             <a href="#home" class="links__scroll">.wdominiak</a>
@@ -41,11 +41,11 @@
       </nav>
       <div class="banner">
         <div class="container">
-          <h1>Hi, my name is Wojciech Dominiak.</h1>
-          <p>I'm frontend developer looking for first comercial experience.</p>
-          <a onclick="location.href='resume.pdf';" class="links__scroll btn">
-            resume
-          </a>
+          <h1 class="banner__title">Hi, my name is Wojciech Dominiak.</h1>
+          <p class="banner_paragraph">
+            I'm frontend developer looking for the first comercial experience.
+          </p>
+          <a onclick="location.href='resume.pdf';" class="btn"> resume </a>
         </div>
       </div>
     </header>
@@ -56,16 +56,17 @@
       </div>
       <div class="about__content">
         <p class="about__paragraph">
-          Hello! My name is Wojciech and I'm M.Sc., Eng of mechanical
-          engineering. My interest in programming started back in 2012 in middle
-          school. Since then programming has been my hobby and I have also used
-          it as an engineer in my work. As my master thesis, I wrote a simple
-          desktop application in Python. It taught me a lot, but the application
-          code itself was full of bad practices. Now I have decided to complete
-          my knowledge and try myself in a commercial job as a frontend
-          developer. I think my experience as a mechanical designer will help me
-          a lot. Finally, here and here, the product is created in consultation
-          with the client.
+          Hello! My name is Wojciech and I'm M.Eng of mechanical engineering. My
+          interest in programming started back in 2012 in middle school. Since
+          then programming has been my hobby and I have also used it as an
+          engineer in my work. As my master thesis, I wrote a simple desktop
+          application in Python. It taught me a lot, but the application code
+          itself was full of bad practices. Now I have decided to complete my
+          knowledge. I've been learning modern frontend development for about
+          one year. I've gained knowledge of advanced math e.g. logic, analysis
+          or algebra during my studies. I have been working creatively with
+          clients for two years. Now I'm looking for a commercial job as a
+          programmer.
         </p>
         <img class="about__image" src="dominiak.jpg" alt="my_photo" />
       </div>
@@ -76,9 +77,9 @@
         <h2>projects</h2>
       </div>
       <div class="projects__content">
-        <article class="project__maincontent">
+        <article class="projects__maincontent">
           <!-- btn container -->
-          <div class="project__btncontainer">
+          <div class="projects__btncontainer">
             <button class="tab-btn active" data-id="dragon-slayer">
               Dragon Slayer
             </button>
@@ -86,7 +87,7 @@
           </div>
           <!-- single item -->
           <div class="content active" id="dragon-slayer">
-            <p>
+            <p class="content__paragraph">
               Dragon Slayer - a simple browser game. The challenge is to kill
               the dragon. The player can perform an attack, a special attack,
               and heal. Special attack and healing are only active in some
@@ -109,7 +110,7 @@
           </div>
           <!-- end of single item -->
         </article>
-        <img src="./hero-bcg.jpeg" alt="" />
+        <img class="projects__photo" src="./hero-bcg.jpeg" alt="" />
       </div>
     </section>
     <!-- EXPERIENCE -->
@@ -124,11 +125,11 @@
         </p>
         <ul class="experience__list">
           <li>
-            designing a product according to the customer's assumptions - from
+            design a product according to the customer's assumptions - from
             concept to finished device
           </li>
-          <li>supervision over technical documentation</li>
-          <li>contact with customer</li>
+          <li>responsible for contact with the customers</li>
+          <li>work in an international environment</li>
         </ul>
         <p class="experience__paragraph">
           Junior mechanical designer @ Sieć badawcza Łukasiewicz - IPS "TABOR"
@@ -137,11 +138,11 @@
         </p>
         <ul class="experience__list">
           <li>
-            designing a product according to the customer's assumptions - from
+            design a product according to the customer's assumptions - from
             concept to finished device
           </li>
           <li>supervision over technical documentation</li>
-          <li>supervision of the production department</li>
+          <li>responsible for contact with the customers</li>
         </ul>
       </div>
     </section>

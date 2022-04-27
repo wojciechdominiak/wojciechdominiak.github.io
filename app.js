@@ -27,7 +27,6 @@ scrollLinks.forEach((link) => {
     const element = document.getElementById(id);
     const navHeight = navbar.getBoundingClientRect().height;
     const containerHeight = linksContainer.getBoundingClientRect().height;
-    const fixedNav = navbar.classList.contains("fixed-nav");
     let position = element.offsetTop - navHeight;
 
     if (navHeight > 92) {
@@ -42,7 +41,7 @@ scrollLinks.forEach((link) => {
   });
 });
 
-const about = document.querySelector(".project__maincontent");
+const about = document.querySelector(".projects__maincontent");
 const btns = document.querySelectorAll(".tab-btn");
 const articles = document.querySelectorAll(".content");
 
