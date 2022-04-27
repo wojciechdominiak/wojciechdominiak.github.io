@@ -247,6 +247,10 @@ ul {
 .projects .projects__content .projects__photo {
   margin-left: 1em;
   max-width: 70vw;
+  border-radius: 1em;
+  border: solid 1px #060b12;
+  -webkit-box-shadow: var(--light-shadow);
+          box-shadow: var(--light-shadow);
 }
 
 .projects .projects__content .projects__maincontent {

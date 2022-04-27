@@ -180,6 +180,9 @@ ul {
     .projects__photo {
       margin-left: 1em;
       max-width: 70vw;
+      border-radius: 1em;
+      border: solid 1px #060b12;
+      box-shadow: var(--light-shadow);
     }
     .projects__maincontent {
       border-radius: 1rem;
