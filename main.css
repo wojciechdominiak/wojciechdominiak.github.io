@@ -171,7 +171,7 @@ ul {
 .about {
   min-height: 100vh;
   padding-bottom: 3rem;
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -184,7 +184,7 @@ ul {
 }
 
 .about .about__content {
-  margin-top: 3em;
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,15 +207,15 @@ ul {
 }
 
 .about .about__content .about__image {
-  margin-top: 1em;
-  max-width: 25vw;
+  max-width: 20vw;
+  min-width: 200px;
   max-height: 35vh;
 }
 
 .projects {
   min-height: 100vh;
   padding-bottom: 3rem;
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 1170px;
   max-width: 80vw;
@@ -235,22 +235,9 @@ ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.projects .projects__content .projects__photo {
-  margin-left: 1em;
-  max-width: 70vw;
-  border-radius: 1em;
-  border: solid 1px #060b12;
-  -webkit-box-shadow: var(--light-shadow);
-          box-shadow: var(--light-shadow);
 }
 
 .projects .projects__content .projects__maincontent {
@@ -349,7 +336,7 @@ ul {
 .experience {
   min-height: 100vh;
   padding-bottom: 3rem;
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -546,21 +533,6 @@ ul {
   .about .about__content img {
     max-width: 45vw;
   }
-  .projects .projects__content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .projects .projects__content .projects__maincontent {
-    max-width: 40vw;
-  }
-  .projects .projects__content .projects__photo {
-    max-width: 40vw;
-  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -605,15 +577,8 @@ ul {
     font-weight: bold;
     padding: 0;
   }
-  .projects__content {
-    margin-top: 3em;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-    grid-auto-rows: 100px;
+  section {
+    width: 70vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -25,7 +25,7 @@
 @mixin section {
   min-height: 100vh;
   padding-bottom: 3rem;
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -121,7 +121,7 @@ ul {
       .links__scroll:hover {
         color: var(--clr-first);
       }
-    } 
+    }
   }
   .banner {
     min-height: 80vh;
@@ -149,7 +149,7 @@ ul {
   @include section;
   @include title;
   .about__content {
-    margin-top: 3em;
+    margin-top: 1em;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -161,8 +161,8 @@ ul {
       color: #818ba9;
     }
     .about__image {
-      margin-top: 1em;
-      max-width: 25vw;
+      max-width: 20vw;
+      min-width: 200px;
       max-height: 35vh;
     }
   }
@@ -175,15 +175,7 @@ ul {
     margin-top: 1em;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
     align-items: center;
-    .projects__photo {
-      margin-left: 1em;
-      max-width: 70vw;
-      border-radius: 1em;
-      border: solid 1px #060b12;
-      box-shadow: var(--light-shadow);
-    }
     .projects__maincontent {
       border-radius: 1rem;
       .projects__btncontainer {
@@ -333,18 +325,6 @@ ul {
       }
     }
   }
-  .projects {
-    .projects__content {
-      flex-direction: row;
-      align-items: flex-start;
-      .projects__maincontent {
-        max-width: 40vw;
-      }
-      .projects__photo {
-        max-width: 40vw;
-      }
-    }
-  }
 }
 @media screen and (min-width: 1000px) {
   body {
@@ -379,11 +359,7 @@ ul {
     font-weight: bold;
     padding: 0;
   }
-  .projects__content {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    grid-auto-rows: 100px;
+  section {
+    width: 70vh;
   }
 }
