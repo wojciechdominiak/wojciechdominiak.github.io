@@ -215,8 +215,11 @@ ul {
           width: fit-content;
         }
         .content__image {
-          max-width: 75%;
-          max-height: 75%;
+          max-width: 70%;
+          max-height: 70%;
+          min-width: 18rem;
+          min-height: 10rem;
+
         }
         .content__paragraph {
           display: flex;
