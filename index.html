@@ -43,7 +43,7 @@
         <div class="container">
           <h1 class="banner__title">Hi, my name is Wojciech Dominiak.</h1>
           <p class="banner_paragraph">
-            I'm frontend developer looking for the first comercial experience.
+            I'm self-taught frontend developer looking for a commercial job as a programmer.
           </p>
           <a onclick="location.href='resume.pdf';" class="btn"> resume </a>
         </div>
@@ -60,13 +60,12 @@
           interest in programming started back in 2012 in middle school. Since
           then programming has been my hobby and I have also used it as an
           engineer in my work. As my master thesis, I wrote a simple desktop
-          application in Python. It taught me a lot, but the application code
-          itself was full of bad practices. Now I have decided to complete my
-          knowledge. I've been learning modern frontend development for about
-          one year. I've gained knowledge of advanced math e.g. logic, analysis
-          or algebra during my studies. I have been working creatively with
-          clients for two years. Now I'm looking for a commercial job as a
-          programmer.
+          application in Python for commercial use. It taught me a lot. Now I
+          have decided to complete my knowledge. I've been learning modern
+          frontend development for about one year. I've gained knowledge of
+          advanced math e.g. logic, analysis or algebra during my studies. I
+          have been working creatively with clients for two years. Now I'm
+          looking for a commercial job as a programmer.
         </p>
         <img class="about__image" src="dominiak.jpg" alt="my_photo" />
       </div>
@@ -80,13 +79,42 @@
         <article class="projects__maincontent">
           <!-- btn container -->
           <div class="projects__btncontainer">
-            <button class="tab-btn active" data-id="dragon-slayer">
+            <button class="tab-btn active" data-id="find-coach">
+              Find a Coach
+            </button>
+            <button class="tab-btn" data-id="dragon-slayer">
               Dragon Slayer
             </button>
-            <button class="tab-btn" data-id="vision">Remember-me</button>
+            <button class="tab-btn" data-id="vision">Remember Me</button>
           </div>
           <!-- single item -->
-          <div class="content active" id="dragon-slayer">
+          <div class="content active" id="find-coach">
+            <img
+              class="content__image"
+              src="./findacoach.jpg"
+              alt="dragon-slayer"
+            />
+            <p class="content__paragraph">
+              Simple browser app where users can find a coach. Users can signup
+              and login. To make an announcement, users have to register as a
+              coach. Also users can send a request to the coach. Coach will see
+              requests in the inbox.
+              <a
+                target="_blank"
+                class="btn"
+                href="https://github.com/wojciechdominiak/find-coaches"
+                >link</a
+              >
+            </p>
+          </div>
+          <!-- end of single item -->
+          <!-- single item -->
+          <div class="content" id="dragon-slayer">
+            <img
+              class="content__image"
+              src="./dragon_slayer.jpg"
+              alt="dragon-slayer"
+            />
             <p class="content__paragraph">
               Dragon Slayer - a simple browser game. The challenge is to kill
               the dragon. The player can perform an attack, a special attack,
@@ -104,6 +132,11 @@
           <!-- end of single item -->
           <!-- single item -->
           <div class="content" id="vision">
+            <img
+              class="content__image"
+              src="./rememberme.jpg"
+              alt="dragon-slayer"
+            />
             <p class="content__paragraph">
               Remember me - a simple web app. The purpose of the application is
               to store the sources of knowledge. The user can add and delete

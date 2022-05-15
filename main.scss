@@ -136,7 +136,7 @@ ul {
     .banner_paragraph {
       color: var(--clr-font);
       font-size: 1.5em;
-      max-width: 50rem;
+      max-width: 60rem;
       margin: 0 auto;
       margin-top: 1em;
       margin-bottom: 2.5rem;
@@ -180,7 +180,7 @@ ul {
       border-radius: 1rem;
       .projects__btncontainer {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         .tab-btn {
           background-color: var(--clr-bg);
           color: var(--clr-font);
@@ -214,6 +214,10 @@ ul {
           margin: 1em;
           width: fit-content;
         }
+        .content__image {
+          max-width: 75%;
+          max-height: 75%;
+        }
         .content__paragraph {
           display: flex;
           flex-direction: column;
@@ -221,7 +225,8 @@ ul {
         }
       }
       .content.active {
-        display: block;
+        display: grid;
+        place-items: center;
       }
     }
   }

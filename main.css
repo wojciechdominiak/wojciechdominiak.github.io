@@ -136,7 +136,7 @@ ul {
 .header .banner .banner_paragraph {
   color: var(--clr-font);
   font-size: 1.5em;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
   margin-top: 1em;
   margin-bottom: 2.5rem;
@@ -247,8 +247,8 @@ ul {
 .projects .projects__content .projects__maincontent .projects__btncontainer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn {
@@ -316,6 +316,11 @@ ul {
   width: fit-content;
 }
 
+.projects .projects__content .projects__maincontent .content .content__image {
+  max-width: 75%;
+  max-height: 75%;
+}
+
 .projects .projects__content .projects__maincontent .content .content__paragraph {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,7 +335,9 @@ ul {
 }
 
 .projects .projects__content .projects__maincontent .content.active {
-  display: block;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .experience {
