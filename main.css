@@ -158,7 +158,7 @@ ul {
   border-radius: var(--radius);
   color: var(--clr-font);
   border-color: var(--clr-font);
-  padding: 0.7rem 2.2rem;
+  padding: 0.7rem 1.5rem;
   font-weight: bold;
 }
 
@@ -179,8 +179,8 @@ ul {
 .about .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 .about .about__content {
@@ -197,18 +197,19 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 80vw;
 }
 
 .about .about__content .about__paragraph {
   color: var(--clr-font);
-  max-width: 75vw;
+  max-width: 80vw;
   margin-bottom: 1.25rem;
   color: #818ba9;
 }
 
 .about .about__content .about__image {
   max-width: 20vw;
-  min-width: 200px;
+  min-width: 150px;
   max-height: 35vh;
 }
 
@@ -224,8 +225,8 @@ ul {
 .projects .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 .projects .projects__content {
@@ -257,7 +258,7 @@ ul {
   background-color: var(--clr-bg);
   color: var(--clr-font);
   padding: 1rem 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   border: none;
   text-transform: capitalize;
   font-size: 1rem;
@@ -299,7 +300,7 @@ ul {
   border-radius: var(--radius);
   color: var(--clr-font);
   border-color: var(--clr-font);
-  padding: 0.7rem 2.2rem;
+  padding: 0.7rem 1.5rem;
   font-weight: bold;
 }
 
@@ -312,7 +313,8 @@ ul {
 .projects .projects__content .projects__maincontent .content .btn {
   display: block;
   text-align: center;
-  margin: 3em;
+  margin-top: 2rem;
+  margin-left: 2rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -330,6 +332,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   max-width: 60vw;
+  color: #818ba9;
 }
 
 .projects .projects__content .projects__maincontent .content .content__links {
@@ -361,8 +364,8 @@ ul {
 .experience .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 .experience .experience__content {
@@ -415,8 +418,8 @@ ul {
 .contact .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 .contact .contact__content {
@@ -457,7 +460,7 @@ ul {
   border-radius: var(--radius);
   color: var(--clr-font);
   border-color: var(--clr-font);
-  padding: 0.7rem 2.2rem;
+  padding: 0.7rem 1.5rem;
   font-weight: bold;
 }
 
