@@ -250,7 +250,7 @@ ul {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 2em;
-  min-width: 70vw;
+  min-width: 65vw;
 }
 
 .projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn {
@@ -329,6 +329,19 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 60vw;
+}
+
+.projects .projects__content .projects__maincontent .content .content__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects .projects__content .projects__maincontent .content.active {
