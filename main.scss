@@ -181,6 +181,8 @@ ul {
       .projects__btncontainer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 2em;
+        min-width: 70vw;
         .tab-btn {
           background-color: var(--clr-bg);
           color: var(--clr-font);
@@ -211,15 +213,8 @@ ul {
         .btn {
           display: block;
           text-align: center;
-          margin: 1em;
+          margin: 3em;
           width: fit-content;
-        }
-        .content__image {
-          max-width: 70%;
-          max-height: 70%;
-          min-width: 18rem;
-          min-height: 10rem;
-
         }
         .content__paragraph {
           display: flex;

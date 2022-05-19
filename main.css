@@ -249,6 +249,8 @@ ul {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2em;
+  min-width: 70vw;
 }
 
 .projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn {
@@ -310,17 +312,10 @@ ul {
 .projects .projects__content .projects__maincontent .content .btn {
   display: block;
   text-align: center;
-  margin: 1em;
+  margin: 3em;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.projects .projects__content .projects__maincontent .content .content__image {
-  max-width: 70%;
-  max-height: 70%;
-  min-width: 18rem;
-  min-height: 10rem;
 }
 
 .projects .projects__content .projects__maincontent .content .content__paragraph {
