@@ -1,0 +1,13 @@
+.footer {
+  padding: 3rem;
+  margin: 0 auto;
+  background-color: #060b12;
+}
+
+.footer .footer__paragraph {
+  color: var(--clr-font);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+/*# sourceMappingURL=footer.css.map */

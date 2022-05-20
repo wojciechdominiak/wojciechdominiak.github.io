@@ -1,0 +1,63 @@
+.contact {
+  min-height: 70vh;
+  padding-bottom: 5rem;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    padding-bottom: 1.7rem;
+  }
+  .contact__content {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    .contact__paragraph {
+      color: var(--clr-font);
+      max-width: 50vw;
+      margin-bottom: 3.25rem;
+      color: #818ba9;
+    }
+    .btn {
+      text-transform: uppercase;
+      background: transparent;
+      letter-spacing: var(--spacing);
+      display: inline-block;
+      transition: var(--transition);
+      font-size: 0.875rem;
+      border: 2px solid;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      border-radius: var(--radius);
+      color: var(--clr-font);
+      border-color: var(--clr-font);
+      padding: 0.7rem 1.5rem;
+      font-weight: bold;
+    }
+    .btn:hover {
+      background: var(--clr-font);
+      opacity: 0.7;
+      color: black;
+    }
+  }
+  .icons {
+    padding: 2em 0 0 0em;
+    display: flex;
+    justify-content: space-evenly;
+    .icnos__icon {
+      font-size: 2.5rem;
+      color: var(--clr-font);
+    }
+    .icnos__icon:hover {
+      opacity: 0.7;
+      color: var(--clr-first);
+    }
+  }
+}

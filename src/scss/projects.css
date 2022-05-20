@@ -1,0 +1,146 @@
+.projects {
+  max-width: 80vw;
+}
+
+.projects .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.projects section {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.projects .projects__content {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .projects__content .projects__maincontent {
+  border-radius: 1rem;
+}
+
+.projects .projects__content .projects__maincontent .projects__btncontainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 2em;
+  min-width: 65vw;
+}
+
+.projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn {
+  background-color: var(--clr-bg);
+  color: var(--clr-font);
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 0.1rem solid var(--clr-font);
+}
+
+.projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn:hover:not(.active) {
+  background-color: var(--clr-font);
+  color: var(--clr-bg);
+  border-left-color: var(--clr-bg);
+  border-right-color: var(--clr-bg);
+}
+
+.projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn.active {
+  background-color: var(--clr-font);
+  color: var(--clr-bg);
+}
+
+.projects .projects__content .projects__maincontent .content {
+  display: none;
+}
+
+.projects .projects__content .projects__maincontent .content .btn {
+  text-transform: uppercase;
+  background: transparent;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  color: var(--clr-font);
+  border-color: var(--clr-font);
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+}
+
+.projects .projects__content .projects__maincontent .content .btn:hover {
+  background: var(--clr-font);
+  opacity: 0.7;
+  color: black;
+}
+
+.projects .projects__content .projects__maincontent .content .btn {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.projects .projects__content .projects__maincontent .content .content__paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 60vw;
+  color: #818ba9;
+}
+
+.projects .projects__content .projects__maincontent .content .content__links {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects .projects__content .projects__maincontent .content.active {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+/*# sourceMappingURL=projects.css.map */
