@@ -34,6 +34,14 @@ body {
   line-height: 1.8;
 }
 
+section {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 a {
   text-decoration: none;
 }
@@ -69,28 +77,6 @@ ul {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-  .about .about__content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .about .about__content p {
-    padding: 2em;
-    max-width: 40vw;
-  }
-  .about .about__content img {
-    max-width: 45vw;
   }
 }
 

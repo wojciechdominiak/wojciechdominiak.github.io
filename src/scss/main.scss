@@ -29,6 +29,13 @@ body {
   color: var(--clr-font);
   line-height: 1.8;
 }
+section {
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  width: 70vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
 a {
   text-decoration: none;
 }
@@ -47,24 +54,7 @@ ul {
     transform: scale(1);
   }
 }
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-  .about {
-    .about__content {
-      flex-direction: row;
-      align-items: center;
-      p {
-        padding: 2em;
-        max-width: 40vw;
-      }
-      img {
-        max-width: 45vw;
-      }
-    }
-  }
-}
+
 @media screen and (min-width: 1000px) {
   body {
     font-size: 1rem;

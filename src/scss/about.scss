@@ -1,11 +1,4 @@
 .about {
-  .section {
-    min-height: 100vh;
-    padding-bottom: 3rem;
-    width: 70vw;
-    margin: 0 auto;
-    max-width: 1170px;
-  }
   .title {
     text-align: center;
     text-transform: capitalize;
@@ -29,6 +22,24 @@
       max-width: 20vw;
       min-width: 150px;
       max-height: 35vh;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .container p {
+    max-width: 40rem;
+  }
+  .about {
+    .about__content {
+      flex-direction: row;
+      align-items: center;
+      p {
+        padding: 2em;
+        max-width: 40vw;
+      }
+      img {
+        max-width: 45vw;
+      }
     }
   }
 }

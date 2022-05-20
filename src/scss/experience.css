@@ -1,11 +1,3 @@
-.experience section {
-  min-height: 100vh;
-  padding-bottom: 3rem;
-  width: 70vw;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
 .experience .title {
   text-align: center;
   text-transform: capitalize;
