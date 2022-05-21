@@ -5,8 +5,9 @@
 .projects .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.7rem;
-  padding-bottom: 1.7rem;
+  font-size: 1.5rem;
+  border-bottom: solid 1px var(--clr-font);
+  padding-bottom: 1rem;
 }
 
 .projects section {
@@ -18,7 +19,7 @@
 }
 
 .projects .projects__content {
-  margin-top: 1em;
+  margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,8 +53,8 @@
   font-size: 1rem;
   display: block;
   cursor: pointer;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   border: 0.1rem solid var(--clr-font);
 }
 
@@ -122,11 +123,19 @@
   color: #818ba9;
 }
 
+.projects .projects__content .projects__maincontent .content .content__paragraph span {
+  color: var(--clr-font);
+}
+
 .projects .projects__content .projects__maincontent .content .content__links {
   width: 30vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin: 1em;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;

@@ -92,9 +92,9 @@
   font-size: 3rem;
 }
 
-.header .banner .banner_paragraph {
+.header .banner .banner__paragraph {
   color: var(--clr-font);
-  font-size: 1.5em;
+  font-size: 1.3em;
   max-width: 60rem;
   margin: 0 auto;
   margin-top: 1em;

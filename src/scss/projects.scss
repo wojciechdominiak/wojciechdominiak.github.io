@@ -2,8 +2,10 @@
   .title {
     text-align: center;
     text-transform: capitalize;
-    font-size: 1.7rem;
-    padding-bottom: 1.7rem;
+    font-size: 1.5rem;
+    border-bottom: solid 1px var(--clr-font);
+    padding-bottom: 1rem;
+    
   }
   section {
     min-height: 100vh;
@@ -14,7 +16,7 @@
   }
   max-width: 80vw;
   .projects__content {
-    margin-top: 1em;
+    margin-top: 2em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,7 +37,7 @@
           font-size: 1rem;
           display: block;
           cursor: pointer;
-          transition: 0.2s;
+          transition: 0.8s;
           border: 0.1rem solid var(--clr-font);
         }
         .tab-btn:hover:not(.active) {
@@ -84,10 +86,14 @@
           align-items: center;
           max-width: 60vw;
           color: #818ba9;
+          span {
+            color: var(--clr-font)
+          }
         }
         .content__links {
           width: 30vw;
           display: flex;
+          flex-direction: row-reverse;
           margin: 1em;
           justify-content: space-evenly;
           align-items: center;

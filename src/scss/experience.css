@@ -1,8 +1,9 @@
 .experience .title {
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.7rem;
-  padding-bottom: 1.7rem;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px var(--clr-font);
 }
 
 .experience .experience__content {
