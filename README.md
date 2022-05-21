@@ -8,4 +8,4 @@ https://wojciechdominiak.github.io
 
 ## Stack
 
-HTML5, CSS3, Saas, JavaScript (Vanilla JS)
+HTML5, CSS3, Sass, TypeScript, npm, webpack
