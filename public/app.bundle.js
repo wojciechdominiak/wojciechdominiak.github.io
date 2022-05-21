@@ -16,7 +16,17 @@
   \********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nexports.__esModule = true;\r\nvar date_js_1 = __webpack_require__(/*! ./js/date.js */ \"./src/js/date.js\");\r\n/* import projectsBtn from \"./js/projectsBtn.js\";\r\nimport closeLinks from \"./js/closeLinks.js\";\r\nimport smoothScroll from \"./js/smmothScroll.js\"; */\r\n(0, date_js_1[\"default\"])();\r\n/* projectsBtn();\r\ncloseLinks();\r\nsmoothScroll(); */\r\n\n\n//# sourceURL=webpack://wdwebsite/./src/app.js?");
+eval("\r\nexports.__esModule = true;\r\nvar date_js_1 = __webpack_require__(/*! ./js/date.js */ \"./src/js/date.js\");\r\nvar closeLinks_js_1 = __webpack_require__(/*! ./js/closeLinks.js */ \"./src/js/closeLinks.js\");\r\n/* import projectsBtn from \"./js/projectsBtn.js\";\r\nimport smoothScroll from \"./js/smmothScroll.js\"; */\r\n(0, date_js_1[\"default\"])();\r\n/* projectsBtn();\r\n\r\nsmoothScroll(); */\r\n(0, closeLinks_js_1[\"default\"])();\r\n\n\n//# sourceURL=webpack://wdwebsite/./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/closeLinks.js":
+/*!******************************!*\
+  !*** ./src/js/closeLinks.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\r\nexports.__esModule = true;\r\nfunction closeLinks() {\r\n    {\r\n        var navToggle = document.querySelector(\".nav-header__toggle\");\r\n        var linksContainer_1 = document.querySelector(\".links-container\");\r\n        var links_1 = document.querySelector(\".links\");\r\n        navToggle.addEventListener(\"click\", function () {\r\n            var linksHeight = links_1.getBoundingClientRect().height;\r\n            var containerHeight = linksContainer_1.getBoundingClientRect().height;\r\n            containerHeight === 0\r\n                ? (linksContainer_1.style.height = \"\".concat(linksHeight, \"px\"))\r\n                : (linksContainer_1.style.height = \"0\");\r\n        });\r\n        var navbar = document.getElementById(\"nav\");\r\n    }\r\n}\r\nexports[\"default\"] = closeLinks;\r\n\n\n//# sourceURL=webpack://wdwebsite/./src/js/closeLinks.js?");
 
 /***/ }),
 
