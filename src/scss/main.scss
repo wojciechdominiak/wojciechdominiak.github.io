@@ -13,6 +13,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 *,
 ::after,
@@ -55,8 +56,15 @@ ul {
     transform: scale(1);
   }
 }
-
+@media screen and (min-width: 768) {
+  html {
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
   body {
     font-size: 1rem;
     line-height: 2;
