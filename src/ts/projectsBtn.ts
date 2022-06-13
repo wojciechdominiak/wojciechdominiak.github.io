@@ -1,5 +1,5 @@
 export default function projectsBtn() {
-  const about = document.querySelector(".projects__maincontent");
+  const about = document.querySelector(".projects__maincontent")!;
   const btns = document.querySelectorAll(".tab-btn");
   const articles = document.querySelectorAll(".content");
 
@@ -14,7 +14,8 @@ export default function projectsBtn() {
       articles.forEach(function (article) {
         article.classList.remove("active");
       });
-      const element = document.getElementById(id).classList.add("active");
+      const element = document.getElementById(id)!.classList.add("active");
+      console.log(element);
     }
   });
 }

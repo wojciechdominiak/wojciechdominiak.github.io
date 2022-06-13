@@ -3,12 +3,12 @@ export default function smoothScroll() {
 
   scrollLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      const navbar = document.getElementById("nav");
-      const linksContainer = document.querySelector<HTMLElement>(".links-container");
+      const navbar = document.getElementById("nav")!;
+      const linksContainer = document.querySelector<HTMLElement>(".links-container")!;
       e.preventDefault();
       const currentTarget=e.currentTarget as HTMLElement;
-      const id =currentTarget.getAttribute("href").slice(1);
-      const element = document.getElementById(id);
+      const id =currentTarget.getAttribute("href")!.slice(1)!;
+      const element = document.getElementById(id)!;
       const navHeight = navbar.getBoundingClientRect().height;
       const containerHeight = linksContainer.getBoundingClientRect().height;
       let position = element.offsetTop - navHeight;
