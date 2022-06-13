@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   -webkit-box-shadow: 0 1.2px 3px black;
           box-shadow: 0 1.2px 3px black;
 }
