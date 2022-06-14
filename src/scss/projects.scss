@@ -38,7 +38,6 @@
           display: block;
           cursor: pointer;
           transition: 0.8s;
-          border: 0.1rem solid var(--clr-font);
         }
         .tab-btn:hover:not(.active) {
           background-color: var(--clr-font);

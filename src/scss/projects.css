@@ -55,7 +55,6 @@
   cursor: pointer;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  border: 0.1rem solid var(--clr-font);
 }
 
 .projects .projects__content .projects__maincontent .projects__btncontainer .tab-btn:hover:not(.active) {
