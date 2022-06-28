@@ -5,7 +5,6 @@
     font-size: 1.5rem;
     border-bottom: solid 1px var(--clr-font);
     padding-bottom: 1rem;
-    
   }
   section {
     min-height: 100vh;
@@ -24,7 +23,7 @@
       border-radius: 1rem;
       .projects__btncontainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-bottom: 2em;
         min-width: 65vw;
         .tab-btn {
@@ -86,7 +85,7 @@
           max-width: 60vw;
           color: #818ba9;
           span {
-            color: var(--clr-font)
+            color: var(--clr-font);
           }
         }
         .content__links {
